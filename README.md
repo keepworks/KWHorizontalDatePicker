@@ -9,6 +9,7 @@ A simple customisable Horizontal Date Picker written in Swift
 - [ ] UI Customization Options for default/selected states of date label
 - [ ] Add License
 - [ ] Release to Cocoapods
+- [ ] Add GIF to show the working
 
 ## Author
 
