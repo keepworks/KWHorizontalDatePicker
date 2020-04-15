@@ -16,8 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KWHorizontalDatePicker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toz-Ys-7cG" userLabel="dateLabel">
+                                <rect key="frame" x="72" y="74" width="270.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yr4-bZ-HUn" userLabel="datePickerView" customClass="HorizontalPicker" customModule="KWHorizontalDatePicker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="94" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="293.5" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.93333333330000001" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ccg-Pn-Py0"/>
@@ -29,13 +35,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41L-A2-FTz" userLabel="poweredBy">
+                                <rect key="frame" x="163" y="747" width="88" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4zE-3d-oWV">
+                                <rect key="frame" x="182" y="782" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HIu-ke-QPQ"/>
+                                    <constraint firstAttribute="width" secondItem="4zE-3d-oWV" secondAttribute="height" multiplier="1:1" id="iWj-ba-SEC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="4zE-3d-oWV" firstAttribute="top" secondItem="41L-A2-FTz" secondAttribute="bottom" constant="15" id="2tX-6z-cyr"/>
+                            <constraint firstItem="Toz-Ys-7cG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4yd-AV-jVh"/>
+                            <constraint firstItem="Z7r-tL-jfS" firstAttribute="top" secondItem="Yr4-bZ-HUn" secondAttribute="bottom" constant="100" id="8En-Cb-UDU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4zE-3d-oWV" secondAttribute="bottom" constant="30" id="AsB-i4-pTG"/>
                             <constraint firstItem="Z7r-tL-jfS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P0c-k2-CVi"/>
                             <constraint firstItem="Yr4-bZ-HUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UmU-K8-N95"/>
+                            <constraint firstItem="41L-A2-FTz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W1c-SK-AIi"/>
+                            <constraint firstItem="Toz-Ys-7cG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="bf6-g4-fPn"/>
+                            <constraint firstItem="4zE-3d-oWV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r83-Z4-8fC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yr4-bZ-HUn" secondAttribute="trailing" id="tTV-IL-ATI"/>
-                            <constraint firstItem="Yr4-bZ-HUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="xHI-sN-8eh"/>
                             <constraint firstItem="Z7r-tL-jfS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yMQ-pQ-QsF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -50,4 +75,7 @@
             <point key="canvasLocation" x="132" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="180" height="180"/>
+    </resources>
 </document>
