@@ -10,11 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  // MARK: - IBOutlets
+  @IBOutlet weak var datePicker: HorizontalPicker!
+  @IBOutlet weak var dateLabel: UILabel!
+
+  // MARK: - Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
+    datePicker.setup()
+    datePicker.didSelectDate = { (date) in
+      self.dateLabel.text = date.toString(format: "dd MMM YYYY")
+    }
   }
-
-
 }
 

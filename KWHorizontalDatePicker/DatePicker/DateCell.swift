@@ -6,4 +6,24 @@
 //  Copyright © 2020 KeepWorks. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class DateCell: UICollectionViewCell {
+  
+  // MARK: - IBOutlets
+  @IBOutlet weak var datelabel: UILabel!
+  
+  // MARK: - Variables
+  var date: Date = Date() {
+    didSet {
+      datelabel.text = date.toString()
+    }
+  }
+  
+  // MARK: - LifeCycle
+  override var isSelected: Bool {
+    didSet{
+      datelabel.textColor = isSelected ? .blue : .black
+    }
+  }
+}
