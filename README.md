@@ -4,6 +4,7 @@ A simple customisable Horizontal Date Picker written in Swift
 
 ## TODO
 
+- [ ] Rename HorizontalPicker -> KWHorizontalPicker
 - [ ] Reorganize files
 - [ ] Remove default code & comments that comes with project init 
 - [ ] UI Customization Options for default/selected states of date label
